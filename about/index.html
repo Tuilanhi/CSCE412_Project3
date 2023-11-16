@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Global Metadata -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="generator" content="Astro v2.4.2" />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://example.com/about/" />
+
+    <!-- Primary Meta Tags -->
+    <title>Nhi Vu&#39;s Portfolio</title>
+    <meta name="title" content="Nhi Vu's Portfolio" />
+    <meta name="description" content="Xin Chào" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://example.com/about/" />
+    <meta property="og:title" content="Nhi Vu's Portfolio" />
+    <meta property="og:description" content="Xin Chào" />
+    <meta property="og:image" content="https://example.com/html.jpg" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://example.com/about/" />
+    <meta property="twitter:title" content="Nhi Vu's Portfolio" />
+    <meta property="twitter:description" content="Xin Chào" />
+    <meta property="twitter:image" content="https://example.com/html.jpg" />
+    <link rel="stylesheet" href="/_astro/about.017c35bc.css" />
+    <link rel="stylesheet" href="/_astro/chick-fil-a-pos.49067dee.css" />
+    <link rel="stylesheet" href="/_astro/index.93ec11f1.css" />
+    <script type="module">
+      const i = () => {
+          const n = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+          return window.innerWidth >= 1024 && !n;
+        },
+        s = document.getElementById('dot');
+      i() ? s.classList.remove('hidden') : s.classList.add('hidden');
+      document.addEventListener('mousemove', (n) => {
+        i() &&
+          (s.style.transform = `translate(${n.clientX}px, ${n.clientY}px)`);
+      });
+      window.addEventListener('load', function () {
+        document.querySelectorAll('.slide-item').forEach(function (t, e) {
+          const o = t.getAttribute('data-transition-duration') || '0.5s',
+            a = t.getAttribute('data-transition-easing') || 'ease';
+          (t.style.transitionDuration = o),
+            (t.style.transitionTimingFunction = a),
+            (t.style.transitionDelay = `${e * 0.2}s`),
+            t.classList.add('slide-in');
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div
+      id="dot"
+      class="pointer-events-none fixed z-50 hidden h-2 w-2 rounded-full bg-orange-200"
+      style="transition: transform 0.2s"
+    ></div>
+    <header class="relative z-20 mb-8 w-full p-2">
+      <div class="mx-auto max-w-3xl">
+        <nav class="flex items-center justify-between gap-3 text-base">
+          <a href="/">
+            <img
+              class="slide-item h-10 w-10 opacity-90"
+              src="/white-logo.png"
+              alt="white-logo"
+              data-transition-duration="0.4s"
+              data-transition-easing="ease"
+            />
+          </a>
+          <div class="flex items-center gap-6 text-base md:hidden">
+            <style>
+              astro-island,
+              astro-slot {
+                display: contents;
+              }
+            </style>
+            <script>
+              ((self.Astro = self.Astro || {}).visible = (s, c, n) => {
+                const r = async () => {
+                  await (
+                    await s()
+                  )();
+                };
+                let i = new IntersectionObserver((e) => {
+                  for (const t of e)
+                    if (t.isIntersecting) {
+                      i.disconnect(), r();
+                      break;
+                    }
+                });
+                for (let e = 0; e < n.children.length; e++) {
+                  const t = n.children[e];
+                  i.observe(t);
+                }
+              }),
+                window.dispatchEvent(new Event('astro:visible'));
+              var l;
+              {
+                const c = {
+                    0: (t) => t,
+                    1: (t) => JSON.parse(t, o),
+                    2: (t) => new RegExp(t),
+                    3: (t) => new Date(t),
+                    4: (t) => new Map(JSON.parse(t, o)),
+                    5: (t) => new Set(JSON.parse(t, o)),
+                    6: (t) => BigInt(t),
+                    7: (t) => new URL(t),
+                    8: (t) => new Uint8Array(JSON.parse(t)),
+                    9: (t) => new Uint16Array(JSON.parse(t)),
+                    10: (t) => new Uint32Array(JSON.parse(t)),
+                  },
+                  o = (t, s) => {
+                    if (t === '' || !Array.isArray(s)) return s;
+                    const [e, n] = s;
+                    return e in c ? c[e](n) : void 0;
+                  };
+                customElements.get('astro-island') ||
+                  customElements.define(
+                    'astro-island',
+                    ((l = class extends HTMLElement {
+                      constructor() {
+                        super(...arguments);
+                        this.hydrate = () => {
+                          if (
+                            !this.hydrator ||
+                            (this.parentElement &&
+                              this.parentElement.closest('astro-island[ssr]'))
+                          )
+                            return;
+                          const s = this.querySelectorAll('astro-slot'),
+                            e = {},
+                            n = this.querySelectorAll(
+                              'template[data-astro-template]'
+                            );
+                          for (const r of n) {
+                            const i = r.closest(this.tagName);
+                            !i ||
+                              !i.isSameNode(this) ||
+                              ((e[
+                                r.getAttribute('data-astro-template') ||
+                                  'default'
+                              ] = r.innerHTML),
+                              r.remove());
+                          }
+                          for (const r of s) {
+                            const i = r.closest(this.tagName);
+                            !i ||
+                              !i.isSameNode(this) ||
+                              (e[r.getAttribute('name') || 'default'] =
+                                r.innerHTML);
+                          }
+                          const a = this.hasAttribute('props')
+                            ? JSON.parse(this.getAttribute('props'), o)
+                            : {};
+                          this.hydrator(this)(this.Component, a, e, {
+                            client: this.getAttribute('client'),
+                          }),
+                            this.removeAttribute('ssr'),
+                            window.removeEventListener(
+                              'astro:hydrate',
+                              this.hydrate
+                            ),
+                            window.dispatchEvent(
+                              new CustomEvent('astro:hydrate')
+                            );
+                        };
+                      }
+                      connectedCallback() {
+                        !this.hasAttribute('await-children') || this.firstChild
+                          ? this.childrenConnectedCallback()
+                          : new MutationObserver((s, e) => {
+                              e.disconnect(), this.childrenConnectedCallback();
+                            }).observe(this, { childList: !0 });
+                      }
+                      async childrenConnectedCallback() {
+                        window.addEventListener('astro:hydrate', this.hydrate);
+                        let s = this.getAttribute('before-hydration-url');
+                        s && (await import(s)), this.start();
+                      }
+                      start() {
+                        const s = JSON.parse(this.getAttribute('opts')),
+                          e = this.getAttribute('client');
+                        if (Astro[e] === void 0) {
+                          window.addEventListener(
+                            `astro:${e}`,
+                            () => this.start(),
+                            { once: !0 }
+                          );
+                          return;
+                        }
+                        Astro[e](
+                          async () => {
+                            const n = this.getAttribute('renderer-url'),
+                              [a, { default: r }] = await Promise.all([
+                                import(this.getAttribute('component-url')),
+                                n ? import(n) : () => () => {},
+                              ]),
+                              i =
+                                this.getAttribute('component-export') ||
+                                'default';
+                            if (!i.includes('.')) this.Component = a[i];
+                            else {
+                              this.Component = a;
+                              for (const d of i.split('.'))
+                                this.Component = this.Component[d];
+                            }
+                            return (this.hydrator = r), this.hydrate;
+                          },
+                          s,
+                          this
+                        );
+                      }
+                      attributeChangedCallback() {
+                        this.hydrator && this.hydrate();
+                      }
+                    }),
+                    (l.observedAttributes = ['props']),
+                    l)
+                  );
+              }
+            </script>
+            <astro-island
+              uid="Z1sjvAh"
+              prefix="r0"
+              component-url="/_astro/DropdownMenu.d8136984.js"
+              component-export="default"
+              renderer-url="/_astro/client.08e48d14.js"
+              props="{}"
+              ssr=""
+              client="visible"
+              opts='{"name":"DropdownMenu","value":true}'
+              await-children=""
+              ><div
+                class="relative inline-block text-left"
+                data-headlessui-state=""
+              >
+                <div
+                  class="slide-item"
+                  data-transition-duration="0.6s"
+                  data-transition-easing="ease"
+                >
+                  <button
+                    class="hover:bg-sky-blue hover:text-black-gray inline-flex justify-center rounded-md border border-zinc-400 px-2 py-2 text-sm font-medium shadow-sm"
+                    aria-label="menu"
+                    id="headlessui-menu-button-:r0R1:"
+                    type="button"
+                    aria-haspopup="menu"
+                    aria-expanded="false"
+                    data-headlessui-state=""
+                  >
+                    <svg
+                      stroke="currentColor"
+                      fill="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 512 512"
+                      class="h-5 w-5"
+                      height="1em"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill="none"
+                        stroke-linecap="round"
+                        stroke-miterlimit="10"
+                        stroke-width="48"
+                        d="M88 152h336M88 256h336M88 360h336"
+                      ></path>
+                    </svg>
+                  </button>
+                </div></div
+            ></astro-island>
+          </div>
+          <div class="hidden items-center gap-6 text-base md:flex">
+            <a
+              href="/about/index.html"
+              class="slide-item active astro-EIMMU3LG"
+              data-transition-duration="0.4s"
+              data-transition-easing="ease"
+            >
+              About
+            </a>
+            <a
+              href="https://drive.google.com/file/d/1dDgBqAg6Lc5N58lPqxgQve7FL10qr0bx/view?usp=sharing"
+              class="slide-item astro-EIMMU3LG"
+              data-transition-duration="0.5s"
+              data-transition-easing="ease"
+            >
+              Download CV
+            </a>
+            <a
+              href="mailto:vuthuynhi05@gmail.com"
+              class="slide-item astro-EIMMU3LG"
+              data-transition-duration="0.5s"
+              data-transition-easing="ease"
+            >
+              Contact
+            </a>
+            <div class="ml-auto flex-1"></div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main class="p-60px p-8">
+      <div class="slide-container">
+        <div class="mx-auto max-w-2xl">
+          <div
+            class="slide-item flex items-center justify-center"
+            data-transition-duration="0.7s"
+            data-transition-easing="ease"
+          >
+            <img
+              class="flex h-auto w-auto items-center justify-center"
+              src="/profile.jpg"
+              alt="profile-image"
+            />
+          </div>
+          <div
+            class="slide-item my-10 flex items-center"
+            data-transition-duration="0.8s"
+            data-transition-easing="ease"
+          >
+            <h2 class="text-4xl">
+              <svg
+                class="icon-shake astro-PATNJMLL inline-block"
+                width="40"
+                height="40"
+                viewBox="0 0 256 256"
+                aria-hidden="true"
+                fill="var(--accent-lighter)"
+                style="--size: 0.8em"
+              >
+                <g class="astro-PATNJMLL">
+                  < xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                  fill="#000000" viewBox="0 0 256 256">
+                  <path
+                    d="M220.2,100l-18-31.18a28,28,0,0,0-47.3-1.92L139.56,40.31a28,28,0,0,0-48.12-.63,28,28,0,0,0-43,34.78l3.34,5.79a28,28,0,0,0-22,41.92l38,65.82a87.46,87.46,0,0,0,53.43,41,88.56,88.56,0,0,0,22.92,3A88,88,0,0,0,220.2,100Zm-6.67,62.63A72,72,0,0,1,81.63,180l-38-65.82a12,12,0,0,1,20.79-12l22,38.1a8,8,0,1,0,13.85-8l-38-65.81a12,12,0,0,1,13.5-17.59,11.9,11.9,0,0,1,7.29,5.59l34,58.89a8,8,0,0,0,13.85-8l-26-45h0a12,12,0,0,1,20.78-12L160,107.78a48.08,48.08,0,0,0-11,61,8,8,0,0,0,13.86-8,32,32,0,0,1,11.71-43.71,8,8,0,0,0,2.93-10.93l-10-17.32a12,12,0,0,1,20.78-12l18,31.18A71.49,71.49,0,0,1,213.53,162.62ZM184.27,29.93a8,8,0,0,1,9.8-5.66c15.91,4.27,29,14.11,36.86,27.73a8,8,0,0,1-13.86,8c-5.72-9.92-15.36-17.12-27.14-20.27A8,8,0,0,1,184.27,29.93ZM80.91,237a8,8,0,0,1-11.24,1.33c-11-8.69-20.11-19.58-28.6-34.28a8,8,0,0,1,13.86-8c7.44,12.88,15.27,22.32,24.65,29.72A8,8,0,0,1,80.91,237Z"
+                  ></path>
+                </g>
+              </svg>
+              Hi there,
+            </h2>
+          </div>
+          <p
+            class="slide-item mb-7"
+            data-transition-duration="0.9s"
+            data-transition-easing="ease"
+          >
+            My name is Nhi Vu, and I am a Computer Science student with 3 years
+            of experience in programming. I developed a passion for developing
+            software and applications that are innovative and impactful to both
+            individuals and a wide range of businesses. In the past few years, I
+            have experience working with a team on projects and maintaining an
+            application system.
+          </p>
+          <p
+            class="slide-item"
+            data-transition-duration="1s"
+            data-transition-easing="ease"
+          >
+            During my free time, I enjoy various hobbies that contribute to
+            bringing in new ideas, such as learning a new programming language,
+            working on a personal project, and watching movies. I also enjoy
+            researching on-trend topics that could enhance my skillsets and
+            knowledge about technologies.
+          </p>
+        </div>
+      </div>
+    </main>
+    <div
+      class="slide-item"
+      data-transition-duration="1.1s"
+      data-transition-easing="ease"
+    >
+      <footer class="astro-SZ7XMLTE">
+        <span class="astro-SZ7XMLTE">&copy; 2023</span>
+        Nhi Vu. All Rights Reserved
+      </footer>
+    </div>
+  </body>
+</html>
